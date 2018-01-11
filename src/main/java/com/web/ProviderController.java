@@ -57,7 +57,7 @@ public class ProviderController {
     }
     
     @RequestMapping("/shutDown")
-	public String shutDownBoot(int returnCode){
+	public String shutDownBoot(){
     	int result = SpringApplication.exit(appContext);
 		return String.valueOf(result);
 	}

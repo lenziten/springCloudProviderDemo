@@ -21,40 +21,48 @@
   </parent>
   
     <dependencies>
+    	<!-- 添加spring boot的web功能 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<!-- 添加mysql jdbc驱动 -->
 		<dependency>
 		    <groupId>mysql</groupId>
 		    <artifactId>mysql-connector-java</artifactId>
 		    <version>6.0.6</version>
 		</dependency>
+		<!-- 添加jquery依赖的jar包 -->
 		<dependency>
 		    <groupId>org.webjars</groupId>
 		    <artifactId>jquery</artifactId>
 		    <version>1.11.3</version>
 		</dependency>
+		<!-- 整合spring与mybatis -->
 		<dependency>
 		    <groupId>org.mybatis.spring.boot</groupId>
 		    <artifactId>mybatis-spring-boot-starter</artifactId>
 		    <version>1.0.0</version>
 		</dependency>
+		<!-- 添加css、js文件的版本管理 -->
 		<dependency>
 		    <groupId>org.webjars</groupId>
 		    <artifactId>webjars-locator</artifactId>
 		</dependency>
+		<!-- 添加spring boot的单元测试功能 -->
 	    <dependency>
 	        <groupId>org.springframework.boot</groupId>
 	        <artifactId>spring-boot-starter-test</artifactId>
 	        <scope>test</scope>
 	    </dependency>
+	    <!-- 添加热部署 -->
 		<dependency>
 	        <groupId>org.springframework.boot</groupId>
 	        <artifactId>spring-boot-devtools</artifactId>
 	        <optional>true</optional>
 	    </dependency>
+	    <!-- 添加分布式服务的发现 -->
 	    <dependency>
 	        <groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka</artifactId>
